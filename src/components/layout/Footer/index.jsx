@@ -6,15 +6,15 @@ import { BiLogoGoogle } from "react-icons/bi";
 import { BiLogoPlayStore } from "react-icons/bi";
 const Footer = () => {
   return (
-    <div className="sticky top-full bg-[#F3F4F4] lg:px-12 px-4 flex flex-wrap border-t-[1px] border-solid  py-[60px] text-[14px]">
-      <div className="flex flex-col lg:w-1/4">
+    <div className="sticky top-full bg-[#F3F4F4] md:px-12 lg:px-12 px-4 flex flex-wrap border-t-[1px] border-solid  py-[60px] text-[14px]">
+      <div className="flex flex-col md:w-1/2 lg:w-1/4">
         <h3 className="text-[15px] mb-[20px] font-[500] leading-[1.2] font-heading text-[#2d465e]">About Us</h3>
         <p className=" mb-6">
           There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
         </p>
         <a className="w-max rounded-[30px] border-[2px] border-solid py-[8px] px-[30px] text-[14px]  bg-[#34BF49] text-white">Learn More</a>
       </div>
-      <div className="flex flex-col lg:w-1/4 md:pl-12">
+      <div className="flex flex-col md:w-1/2 lg:w-1/4 md:pl-12">
         <h2 className="text-[15px] font-heading text-[#2d465e] mb-[20px] mt-[20px] md:mt-0 font-[500] leading-[1.2]">Navigation</h2>
         <div className="flex md:flex-row">
         <ul className="mr-8 float-left mb-4">
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
        
       </div>
-      <div className="flex flex-col lg:w-1/4">
+      <div className="flex flex-col md:w-1/2 md:mt-5 lg:mt-0 lg:w-1/4">
         <h2 className="text-[#2d465e] text-[15px] mb-[20px] font-heading">Recent Posts</h2>
         <div className="flex flex-col">
           <div className="mb-[10px] leading-[1.5] "><p className="text-[12px] ">May 3, 2020</p>
@@ -42,7 +42,7 @@ const Footer = () => {
          
         </div>
       </div>
-      <div className="flex flex-col lg:w-1/4 ">
+      <div className="flex flex-col md:w-1/2 md:pl-10 lg:pl-0 lg:w-1/4 ">
         <div>
           <h3 className="font-heading text-[#2d465e] text-[15px] mb-[20px] ">Connect</h3>
           <div className="flex mb-4 gap-1">

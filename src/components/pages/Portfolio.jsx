@@ -6,6 +6,7 @@ import { HiMagnifyingGlassPlus } from "react-icons/hi2";
 import { IoIosLink } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
   const [activeLink, setActiveLink] = useState("All");
@@ -44,17 +45,17 @@ const Portfolio = () => {
     <>
       <Breadcrumbs />
 
-      <section className="py-[60px]">
+      <section className="py-[60px]" data-aos='fade-up'>
         <div>
           <div className="mb-[8px] ">
             <ul className="flex justify-center gap-4">
               {Links.map((link, index) => (
                 <li
                   key={index}
-                  className={`py-[9px] px-[20px] text-[15px] leading-[1] font-[500] rounded-[50px] transition-all duration-300  mb-[5px] cursor-pointer
+                  className={`py-[9px] px-[20px] text-[15px] leading-[1] font-[500] rounded-[50px]  mb-[5px] cursor-pointer
               ${activeLink === link ? "bg-[#34bf49] text-white" : ""}`}
                   onClick={() => handleLinkClick(link)}
-                >
+                > 
                   {link}
                 </li>
               ))}
@@ -67,7 +68,7 @@ const Portfolio = () => {
                   <div key={item.id} className="pt-6 relative group">
                     <div className="">
                     <img src={item.image} className=""/>
-                    <div className="absolute invisible  group-hover:visible bottom-0 bg-white opacity-80 w-full h-[80px] p-[15px] transition-all duration-500 ">
+                    <div className="absolute invisible  group-hover:visible bottom-0 bg-white opacity-80 w-full h-[80px] p-[15px]  ">
                        <h4 className="text-[18px] font-[600] pr-[50px] text-[#2d465e] leading-[1.2] ">{item.title}</h4>
                        <p className="text-[14px] pr-[50px] ">{item.description}</p>
                        <HiMagnifyingGlassPlus  className="absolute right-[50px] text-[24px] top-[5px] cursor-pointer mt-2" onClick={() => handleZoomClick(item)}/>
@@ -86,7 +87,7 @@ const Portfolio = () => {
 
       {isOpenModal && (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-    <div className="w-[80vw] h-[80vh] bg-white rounded-lg p-6">
+    <div className="w-[80vw] h-[80vh]  rounded-lg p-6">
       <MyCarousel showDots={true} responsive={responsive}>
         {carouselItems.map((item) => (
           <div key={item.id}>
@@ -107,7 +108,7 @@ const Portfolio = () => {
 )}
 
 
-      <div className="py-[60px]">
+      <div className="py-[60px]" data-aos='fade-up'>
         <div className="flex flex-wrap justify-center">
           <div className="md:w-1/2 w-full">
             <MyCarousel showDots={true} responsive={responsive}>

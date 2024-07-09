@@ -1,4 +1,5 @@
 import {useState} from "react";
+import "aos/dist/aos.css";
 import { IoIosArrowDown } from "react-icons/io";
 const FAQ = () => {
     const [open, setOpen] = useState({})
@@ -10,7 +11,7 @@ const FAQ = () => {
         }))
     }
   return (
-    <div>
+    <div data-aos='fade-up'>
       <div className="pb-[60px] relative text-center">
         <p className="leading-[1.7] text-[15px] mb-[10px] ">Plans</p>
         <h2 className="text-[22px] font-[500] text-[#2d465e]">

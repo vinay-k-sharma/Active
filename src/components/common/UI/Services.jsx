@@ -2,9 +2,10 @@ import { BiSearch } from "react-icons/bi";
 import { MdKeyboardCommandKey } from "react-icons/md"
 import { BiGridAlt } from "react-icons/bi";
 import { BsGlobe } from "react-icons/bs";
+import "aos/dist/aos.css";
 const ServicesComponent = () => {
   return (
-    <div className="flex flex-wrap lg:mx-32 mx-6 justify-center">
+    <div className="flex flex-wrap lg:mx-32 mx-6 justify-center" data-aos='fade-up'>
             <div className="lg:w-1/3 md:w-1/2 w-full flex-shrink-0 max-w-full ">
               <span className="text-[15px] mb-[10px] block text-[#212529] font-default">
                 Our Services

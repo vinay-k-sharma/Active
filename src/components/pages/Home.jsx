@@ -44,7 +44,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className="w-full lg:w-1/2 md:mr-[80px] md:ml-[80px] lg:ml-0 lg:mr-24 z-[1] px-3  order-1 md:order-1 lg:order-2"
+          className="w-full lg:w-1/2 md:mr-[80px]  md:ml-[80px] lg:ml-0  z-[1]   order-1 md:order-1 lg:order-2"
           data-aos="fade-up"
           data-aos-delay="500"
         >
@@ -137,15 +137,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
-        <div className="flex">
-          { features.map((feature) => (
-            <
-          ))
-          
-          }
-          </div>
-      </section>
+ 
 
       <section className="py-[60px] flex justify-center bg-[#FFFFFF]">
         <div>

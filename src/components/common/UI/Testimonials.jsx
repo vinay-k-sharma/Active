@@ -1,4 +1,5 @@
 import MyCarousel from "../MyCarousel";
+import "aos/dist/aos.css";
 const Testimonials = () => {
   const responsive = {
     desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1, slidesToSlide: 1 },
@@ -6,13 +7,13 @@ const Testimonials = () => {
     mobile: { breakpoint: { max: 464, min: 0 }, items: 1, slidesToSlide: 1 }
   };
   return (
-    <>
-    <div className='text-center pb-[60px] relative'>
+    <div>
+    <div className='text-center pb-[60px] relative' data-aos='fade-up'>
         <p className='leading-[1.7] text-[#212529] text-[15px] mb-[10px]'>Happy Customers</p>
         <h2 className='text-[22px] font-[500] text-[#2d465e] leading-[1.2]'>Testimonials</h2>
     </div> 
 
-    <div>
+    <div data-aos='fade-up'>
         <div className='flex flex-wrap justify-center'>
             <div className='md:w-1/2 w-full'>
             
@@ -56,7 +57,7 @@ const Testimonials = () => {
             </div>
         </div>
     </div>
-    </>
+    </div>
   )
 }
 

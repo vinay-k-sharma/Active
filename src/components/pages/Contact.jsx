@@ -9,10 +9,10 @@ const Contact = () => {
     <>
       <Breadcrumbs/>
 
-      <div className="p-[60px] box-border block">
+      <div className="lg:p-[60px] px-3 py-16 box-border block">
           <div>
             <div className="flex flex-wrap">
-              <div className="md:w-1/3 w-full">
+              <div className="lg:w-1/3 md:px-10 md:pb-5 w-full">
                 <div className="box-border block p-[40px] shadow-lg">
                   <h3 className="text-[#2d465e] text-[24px] mb-2 font-[600] leading-[1.2] block ">Get in touch</h3>
                   <p className="mb-[30px] text-[15px]  box-border block ">Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
@@ -42,25 +42,25 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="md:w-2/3 w-full md:pl-10 ">
-                <form className="pt-12 md:pt-0">
+              <div className="lg:w-2/3 w-full md:px-10  ">
+                <form className="pt-12 md:pt-10 lg:pt-0">
                   <div className="flex flex-col md:flex-row">
                     <div className="md:w-1/2 w-full">
-                        <input type="text" placeholder="Your Name" className="h-[48px] py-[10px] px-[15px] text-[14px] border border-solid border-[#2d465e] border-opacity-80 font-normal leading-[1.5] w-full "/>
+                        <input type="text" placeholder="Your Name" className="h-[48px] py-[10px] px-[15px] text-[14px] border border-solid border-[#D3D3D4] border-opacity-80 font-normal focus:outline-[#34bf49] leading-[1.5] w-full "/>
                     </div>
 
                     <div className="md:w-1/2 w-full pb-[8px] md:pl-[28px]">
                      
-                        <input type="text" placeholder="Your Email" className="h-[48px] py-[10px] px-[15px] text-[14px] border border-solid border-[#2d465e] border-opacity-80 font-normal leading-[1.5] w-full focus:border-green-500 mt-8 md:mt-0 "/>
+                        <input type="text" placeholder="Your Email" className="h-[48px] py-[10px] px-[15px] text-[14px] border border-solid border-[#D3D3D4] border-opacity-80 font-normal leading-[1.5] w-full focus:outline-[#34bf49] mt-8 md:mt-0 "/>
              
                     </div>
                   </div>
                   <div className="pb-[8px] mt-4 ">
-                      <input type="text" placeholder="Subject" className="h-[48px] py-[10px] px-[15px] text-[14px] border border-[#2d465e] border-opacity-80 font-normal leading-[1.5] border-solid w-full"/>
+                      <input type="text" placeholder="Subject" className="h-[48px] py-[10px] px-[15px] text-[14px] border border-[#D3D3D4] border-opacity-80 font-normal leading-[1.5] border-solid w-full focus:outline-[#34bf49]"/>
                     </div>
 
                     <div className="pb-[8px] mt-4 ">
-                      <textarea className="py-[10px] px-[12px] h-[290px] text-[14px] border border-opacity-80 border-[#2d465e] w-full font-normal leading-[1.5] " placeholder="Message"/>
+                      <textarea className="py-[10px] px-[12px] h-[290px] text-[14px] border border-opacity-80 border-[#D3D3D4] focus:outline-[#34bf49] w-full font-normal leading-[1.5] " placeholder="Message"/>
                     </div>
 
                     <div className=" text-center">

@@ -1,7 +1,7 @@
-
+import "aos/dist/aos.css";
 const Pricing = () => {
   return (
-    <div>
+    <div data-aos='fade-up'>
       <div className="pb-[60px] text-center relative">
               <p className="leading-[1.7] text-[#212529] text-[15px] mb-[10px]">Plans</p>
               <h2 className="text-[22px] font-[500] leading-[1.2] text-[#2d465e]">Pricing Table</h2>
